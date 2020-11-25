@@ -8,9 +8,9 @@ import {
     NavLink,
 } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import HomeContent from "../home/HomeContent";
-import NewsList from "../news/NewsList";
-import LoginForm from "../login/LoginForm";
+import Home from "../home/Home";
+import News from "../news/News";
+import Login from "../login/Login";
 
 function Layout({children}) {
     return(
@@ -28,9 +28,9 @@ function Layout({children}) {
         </Navbar>
         <Container>
           <Switch>
-              <Route path="/" exact component={HomeContent} />
-              <Route path="/news" component={NewsList} />
-              <Route path="/login" component={LoginForm} />
+              <Route path="/" exact component={Home} />
+              <Route path="/news" component={News} />
+              <Route path="/login" component={Login} />
           </Switch>
         </Container>
       </Router>   

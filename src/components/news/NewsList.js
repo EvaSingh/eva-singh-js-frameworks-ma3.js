@@ -1,12 +1,12 @@
 import React from "react";
-import Heading from "../layout/Heading";
 
 export function NewsList() {
     return (
-      <>
-        <Heading title="News"/>
-        <p>The news list come here</p>
-      </>    
+        <ul>
+          <li>Duis bibendum arcu a metus tempor feugiat.</li>
+          <li>Vivamus ac enim et magna aliquet dapibus.</li>
+          <li>Quisque et nisl eu nisl ullamcorper ullamcorper.</li>
+        </ul>   
     );
 }
 
